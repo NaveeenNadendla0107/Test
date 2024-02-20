@@ -12,10 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Set up Maven
-        uses: actions/setup-Maven@v2
-        with:
-           Maven-version: '3_2_5'
+      
 
 
       - name: SonarCloud Scan
