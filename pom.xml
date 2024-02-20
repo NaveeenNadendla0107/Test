@@ -233,7 +233,7 @@
 						<!-- -Deasybuggy.mode=only-vulnerabilities -->
 						-ea
 			<properties>
-                           <sonar.host.url>http://your-sonarqube-server-url</sonar.host.url>
+                           <sonar.host.url>http://https://sonarcloud.io</sonar.host.url>
                         </properties>
 
                         <build>
