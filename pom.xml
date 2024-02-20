@@ -232,16 +232,7 @@
 						<!-- -Djava.security.policy=catalina.policy -->
 						<!-- -Deasybuggy.mode=only-vulnerabilities -->
 						-ea
-			<properties>
-                           <sonar.host.url>http://https://sonarcloud.io</sonar.host.url>
-                        </properties>
-
-                        <build>
-                        <plugins>
-                         <plugin>
-                         <groupId>org.sonarsource.scanner.maven</groupId>
-                         <artifactId>sonar-maven-plugin</artifactId>
-                          <version>3.9.1.2184</version>
+			
 					</jvmArguments>
 				</configuration>
 			</plugin>
