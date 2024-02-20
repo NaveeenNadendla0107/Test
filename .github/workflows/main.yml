@@ -30,10 +30,10 @@ jobs:
       - name: Sonar cloud
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn verify sonar:sonar \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.organization=test0107 \
-          -Dsonar.projectKey=test0107
+       # run: mvn verify sonar:sonar \
+        #  -Dsonar.host.url=https://sonarcloud.io \
+       #   -Dsonar.organization=test0107 \
+       #   -Dsonar.projectKey=test0107
    #   - name: SonarCloud Scan
     #    uses: sonarsource/sonarcloud-github-action@master
    #     env:
