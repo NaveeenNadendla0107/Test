@@ -13,13 +13,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Checkmarx AST CLI Action
-        uses: checkmarx/ast-github-action@main #Github Action version
+      - name: Set up Java
+        uses: actions/setup-java@v2
         with:
-          base_uri: https://ast.checkmarx.net/
-          cx_tenant: your_tenant
-          cx_client_id: ${{ secrets.CX_CLIENT_ID }}
-          cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
+          distribution: 'adopt'
+          java-version: '11'
+ 
+      - name: Build Application
+        run: |
+          # Add commands to build your application
+          ./gradlew build  # or npm install, mvn package, etc
+
+   #   - name: Checkmarx AST CLI Action
+   #     uses: checkmarx/ast-github-action@main #Github Action version
+    #    with:
+    #      base_uri: https://ast.checkmarx.net/
+      #    cx_tenant: your_tenant
+      #    cx_client_id: ${{ secrets.CX_CLIENT_ID }}
+        #  cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
 
       
 
